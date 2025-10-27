@@ -111,6 +111,7 @@ dependencies:
   uuid: ^4.3.3                   # Unique ID generation
   share_plus: ^7.2.1             # Social sharing
 ```
+---
 
 📁 Project Structure
 ```
@@ -143,6 +144,7 @@ web/
 ├── index.html                     # HTML entry point
 └── firebase.json                  # Firebase hosting config
 ```
+---
 
 ###🔐 Security Implementation
 
