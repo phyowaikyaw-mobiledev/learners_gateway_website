@@ -79,6 +79,7 @@
 3. **Learn testing strategies** for Flutter apps
 
 ## 📁 Project Structure I'm Learning
+
 lib/
 ├── models/ # Data structures I understand
 ├── services/ # Business logic I'm studying
@@ -119,7 +120,8 @@ flutter pub get
 # Run the application
 flutter run
 
-📚 Resources I'm Using
+
+## 📚 Resources I'm Using
 Flutter Documentation - Primary learning resource
 
 Firebase Guides - Backend integration tutorials
@@ -128,7 +130,7 @@ YouTube Tutorials - Visual learning aids
 
 Community Forums - Problem-solving discussions
 
-🎯 Interview Preparedness
+## 🎯 Interview Preparedness
 What I Can Confidently Discuss
 Flutter widget lifecycle
 
@@ -149,7 +151,7 @@ Performance optimization techniques
 
 Testing strategies
 
-👨‍💻 About Me
+## 👨‍💻 About Me
 Phyo Wai Kyaw - Passionate Mobile Developer in Training
 
 🔭 Currently: Deepening my Flutter & Firebase skills
@@ -162,16 +164,17 @@ Phyo Wai Kyaw - Passionate Mobile Developer in Training
 
 📫 Reach me: [Your Email/LinkedIn]
 
-🌟 Final Thoughts
+## 🌟 Final Thoughts
 This project represents my journey from beginner to professional developer. While I used AI assistance to build this application, I'm committed to understanding every line of code and becoming a proficient Flutter developer.
 
 I believe in honest growth - acknowledging what I don't know while demonstrating my ability to learn quickly and effectively.
 
 <div align="center">
-🎓 This is my learning journey - follow along as I grow!
+  
+## 🎓 This is my learning journey - follow along as I grow!
 Built with curiosity and a passion for learning 🚀
 
 https://img.shields.io/github/followers/phyowaikyaw-mobiledev?style=social
-[https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin]([Your LinkedIn URL])
+[https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin](https://www.linkedin.com/in/developer-phyowaikyaw-872aa81a7/)
 
 </div> ```
