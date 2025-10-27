@@ -122,31 +122,31 @@ dependencies:
 ## 📁 Project Structure
 
 lib/
-├── main.dart                      # App entry point & routing
+├── main.dart # App entry point & routing
 ├── config/
-│   └── firebase_config.dart       # Firebase settings & admin list
+│ └── firebase_config.dart # Firebase settings & admin list
 ├── models/
-│   ├── blog_post.dart            # Blog post data model
-│   └── comment.dart              # Comment data model
+│ ├── blog_post.dart # Blog post data model
+│ └── comment.dart # Comment data model
 ├── screens/
-│   ├── home_page.dart            # Landing page
-│   ├── blog_page.dart            # Blog listing & details
-│   ├── courses_page.dart         # Courses (placeholder)
-│   ├── tutorials_page.dart       # Tutorials (placeholder)
-│   ├── about_page.dart           # About section
-│   └── contact_page.dart         # Contact form
+│ ├── home_page.dart # Landing page
+│ ├── blog_page.dart # Blog listing & details
+│ ├── courses_page.dart # Courses (placeholder)
+│ ├── tutorials_page.dart # Tutorials (placeholder)
+│ ├── about_page.dart # About section
+│ └── contact_page.dart # Contact form
 ├── services/
-│   ├── firebase_service.dart     # Firebase CRUD operations
-│   ├── admin_auth_service.dart   # Admin authentication
-│   └── validators/
-│       └── input_validator.dart  # Input sanitization
+│ ├── firebase_service.dart # Firebase CRUD operations
+│ ├── admin_auth_service.dart # Admin authentication
+│ └── validators/
+│ └── input_validator.dart # Input sanitization
 └── widgets/
-    ├── navbar.dart               # Navigation bar
-    └── footer.dart               # Page footer
+├── navbar.dart # Navigation bar
+└── footer.dart # Page footer
 
 web/
-├── index.html                    # HTML entry point
-└── firebase.json                 # Firebase hosting config
+├── index.html # HTML entry point
+└── firebase.json # Firebase hosting config
 
 
 ---
