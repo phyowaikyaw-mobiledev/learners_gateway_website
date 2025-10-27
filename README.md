@@ -190,7 +190,11 @@ service cloud.firestore {
     }
   }
 }
-Web Security Headers
+```
+---
+
+## Web Security Headers
+```
 json
 Copy code
 {
@@ -202,9 +206,12 @@ Copy code
   ]
 }
 ```
+--- 
 
-🚀 Setup & Installation
+## 🚀 Setup & Installation
+
 Prerequisites
+
 Flutter SDK (3.0 or higher)
 
 Dart SDK
@@ -213,7 +220,9 @@ Firebase account
 
 VS Code or Android Studio
 
-Local Development
+---
+
+### Local Development
 Clone the repository
 
 bash
