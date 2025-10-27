@@ -44,7 +44,6 @@
 ### **Backend (Learning)**
 - **Firebase Firestore** - NoSQL database concepts
 - **Firebase Authentication** - User management systems
-- **Firebase Storage** - File upload/download
 - **Firebase Hosting** - Web deployment
 
 ## 🚀 Project Status
