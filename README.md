@@ -101,12 +101,19 @@ This project involves:
 
 ### Additional Packages
 ``yaml
+
 dependencies:
+
   visibility_detector: ^0.2.2    # Scroll animations
+  
   google_fonts: ^6.1.0           # Custom typography
+  
   url_launcher: ^6.2.0           # External links
+  
   intl: ^0.19.0                  # Date formatting
+  
   uuid: ^4.3.3                   # Unique ID generation
+  
   share_plus: ^7.2.1             # Social sharing
 
 
