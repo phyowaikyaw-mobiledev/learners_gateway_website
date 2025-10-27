@@ -100,7 +100,7 @@ This project involves:
 - **Responsive Layouts** - Mobile-first design
 
 ### Additional Packages
-``yaml
+yaml
 
 dependencies:
 
