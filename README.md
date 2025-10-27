@@ -284,8 +284,8 @@ firebase deploy
 ```
 ## 📊 Database Schema
 
-##Firestore Collections
-posts/ (Blog Posts)
+## Firestore Collections
+## posts/ (Blog Posts)
 ```
 javascript
 Copy code
@@ -303,7 +303,7 @@ Copy code
 }
 ```
 
-posts/{postId}/comments/ (Comments)
+## posts/{postId}/comments/ (Comments)
 ```
 javascript
 Copy code
@@ -320,12 +320,10 @@ Copy code
 (All other sections stay the same — About Learning, Challenges, Roadmap, Acknowledgments, etc., already format perfectly as written.)
 
 <div align="center">
+  
 💙 Learning in Public | Building with Flutter
+  
 "This isn't just a portfolio project - it's my journey of learning Flutter web development while building something meaningful for my community."
-
-
-
-
 
 Status: 🚧 In Active Development | Completion: ~65%
 
