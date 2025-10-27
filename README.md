@@ -147,6 +147,7 @@ web/
 ###🔐 Security Implementation
 
 Authentication Security
+
 Admin-only access with email whitelist validation
 
 Rate limiting to prevent brute-force attacks (5 attempts per 5 minutes)
@@ -156,7 +157,8 @@ Email verification required for admin accounts
 Secure sign-out with proper session cleanup
 
 
-```##Input Validation
+##Input Validation
+```
 dart
 Copy code
 // XSS Prevention
@@ -172,7 +174,8 @@ static String sanitizeInput(String input) {
 // Post content validation (length limits, dangerous pattern detection)
 ```
 
-```###Firestore Security (Planned)
+###Firestore Security (Planned)
+```
 javascript
 Copy code
 rules_version = '2';
