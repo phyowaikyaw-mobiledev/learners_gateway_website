@@ -9,7 +9,6 @@ This is an **ongoing learning project** where I'm building a community platform 
 
 **Live Demo:** [learners-gateway.web.app](https://learners-gateway.web.app/)
 
----
 
 ## 🌟 About This Project
 
@@ -28,7 +27,6 @@ This project involves:
 
 **Transparency Note:** Some advanced implementations like Firebase security rules, admin authentication, and input validation were developed with AI guidance. I'm actively studying these patterns to understand them deeply.
 
----
 
 ## ✅ Implemented Features
 
@@ -54,7 +52,6 @@ This project involves:
 - **Input Validation** for security  
 - **Responsive UI** with Flutter's MediaQuery  
 
----
 
 ## 🚧 In Progress / Planned
 
@@ -77,7 +74,6 @@ This project involves:
 - No user registration (admin-only access currently)  
 - Limited to 1GB free Firestore storage  
 
----
 
 ## 🛠️ Tech Stack
 
@@ -111,7 +107,6 @@ dependencies:
   uuid: ^4.3.3                   # Unique ID generation
   share_plus: ^7.2.1             # Social sharing
 ```
----
 
 ## 📁 Project Structure
 ```
@@ -144,7 +139,6 @@ web/
 ├── index.html                     # HTML entry point
 └── firebase.json                  # Firebase hosting config
 ```
----
 
 ## 🔐 Security Implementation
 
@@ -158,7 +152,6 @@ Email verification required for admin accounts
 
 Secure sign-out with proper session cleanup
 
----
 
 ## Input Validation
 ```
@@ -191,7 +184,6 @@ service cloud.firestore {
   }
 }
 ```
----
 
 ## Web Security Headers
 ```
@@ -206,7 +198,6 @@ Copy code
   ]
 }
 ```
---- 
 
 ## 🚀 Setup & Installation
 
@@ -220,10 +211,8 @@ Firebase account
 
 VS Code or Android Studio
 
----
 
 ## Local Development
----
 ## Clone the repository
 ```
 bash
@@ -231,7 +220,6 @@ Copy code
 git clone https://github.com/phyowaikyaw-mobiledev/learners_gateway_website.git
 cd learners_gateway_website
 ```
----
 
 ## Install dependencies
 ```
@@ -263,18 +251,21 @@ const firebaseConfig = {
   projectId: "YOUR_PROJECT_ID"
 };
 ```
+
 ## Run on web
 ```
 bash
 Copy code
 flutter run -d chrome
 ```
+
 ## Build for production
 ```
 bash
 Copy code
 flutter build web --release
 ```
+
 ## Deploy to Firebase Hosting
 ```
 bash
@@ -283,9 +274,11 @@ firebase login
 firebase init hosting
 firebase deploy
 ```
-## 📊 Database Schema
-# Firestore Collections
-# posts/ (Blog Posts)
+
+# 📊 Database Schema
+## Firestore Collections
+### posts/ (Blog Posts)
+
 ```
 javascript
 Copy code
@@ -303,7 +296,8 @@ Copy code
 }
 ```
 
-## posts/{postId}/comments/ (Comments)
+### posts/{postId}/comments/ (Comments)
+
 ```
 javascript
 Copy code
