@@ -102,7 +102,7 @@ This project involves:
 - **Responsive Layouts** - Mobile-first design  
 
 ### Additional Packages
-``yaml
+```yaml
 dependencies:
   visibility_detector: ^0.2.2    # Scroll animations
   google_fonts: ^6.1.0           # Custom typography
@@ -139,6 +139,8 @@ lib/
 web/
 ├── index.html                     # HTML entry point
 └── firebase.json                  # Firebase hosting config
+```
+
 🔐 Security Implementation
 Authentication Security
 Admin-only access with email whitelist validation
@@ -149,7 +151,7 @@ Email verification required for admin accounts
 
 Secure sign-out with proper session cleanup
 
-Input Validation
+```Input Validation
 dart
 Copy code
 // XSS Prevention
@@ -163,6 +165,8 @@ static String sanitizeInput(String input) {
 // Email validation with regex
 // Password strength requirements (8+ chars, uppercase, lowercase, number)
 // Post content validation (length limits, dangerous pattern detection)
+```
+
 Firestore Security (Planned)
 javascript
 Copy code
