@@ -223,6 +223,7 @@ VS Code or Android Studio
 ---
 
 ## Local Development
+---
 ## Clone the repository
 ```
 bash
@@ -230,6 +231,7 @@ Copy code
 git clone https://github.com/phyowaikyaw-mobiledev/learners_gateway_website.git
 cd learners_gateway_website
 ```
+---
 
 ## Install dependencies
 ```
