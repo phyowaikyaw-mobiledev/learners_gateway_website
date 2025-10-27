@@ -338,7 +338,7 @@ class _BlogPageState extends State<BlogPage> {
       builder: (context) {
         return Container(
           margin: EdgeInsets.symmetric(
-            horizontal: isMobile ? 0 : 0, // ✅ WIDER ON DESKTOP
+            horizontal: isMobile ? 0 : 0,
             vertical: isMobile ? 0:0,
           ),
           child: BlogPostDetailModal(
@@ -540,56 +540,51 @@ class _BlogPostDetailModalState extends State<BlogPostDetailModal> {
   }
 
   void _checkIfLiked() {
-    final firebaseService = Provider.of<FirebaseService>(context, listen: false);
-    final currentUser = firebaseService.currentUser;
-    if (currentUser != null) {
-      setState(() {
-        _isLiked = widget.post.likes.contains(currentUser.uid);
-      });
-    }
+    // Remove login requirement - allow anonymous liking
+    setState(() {
+      _isLiked = false; // Default state for anonymous users
+    });
   }
 
   void _toggleLike() async {
     final firebaseService = Provider.of<FirebaseService>(context, listen: false);
-    final currentUser = firebaseService.currentUser;
-    if (currentUser == null) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Please login to like posts')),
-      );
-      return;
-    }
+
+    // Generate unique anonymous user ID for this session
+    final anonymousUserId = 'anonymous_${DateTime.now().millisecondsSinceEpoch}';
 
     final success = await firebaseService.likePost(
       widget.post.id,
-      currentUser.uid,
+      anonymousUserId,
     );
 
     if (success) {
       setState(() {
         _isLiked = !_isLiked;
       });
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(_isLiked ? 'Liked!' : 'Like removed')),
+      );
     }
   }
 
   void _addComment() async {
-    final firebaseService = Provider.of<FirebaseService>(context, listen: false);
-    final currentUser = firebaseService.currentUser;
-    if (currentUser == null) {
+    if (_commentController.text.trim().isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Please login to comment')),
+        const SnackBar(content: Text('Please enter a comment')),
       );
       return;
     }
 
-    if (_commentController.text.trim().isEmpty) {
-      return;
-    }
+    final firebaseService = Provider.of<FirebaseService>(context, listen: false);
+
+    // Generate unique anonymous user ID
+    final anonymousUserId = 'anonymous_${DateTime.now().millisecondsSinceEpoch}';
 
     final comment = Comment(
       id: DateTime.now().millisecondsSinceEpoch.toString(),
       postId: widget.post.id,
-      authorName: currentUser.displayName ?? 'Anonymous User',
-      authorEmail: currentUser.email ?? '',
+      authorName: 'Guest User', // Anonymous name
+      authorEmail: 'guest@example.com',
       content: _commentController.text.trim(),
       createdAt: DateTime.now(),
     );
@@ -598,7 +593,11 @@ class _BlogPostDetailModalState extends State<BlogPostDetailModal> {
     if (success) {
       _commentController.clear();
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Comment added successfully')),
+        const SnackBar(content: Text('Comment added successfully!')),
+      );
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Failed to add comment')),
       );
     }
   }
@@ -670,7 +669,7 @@ class _BlogPostDetailModalState extends State<BlogPostDetailModal> {
           ),
           Expanded(
             child: SingleChildScrollView(
-              padding: EdgeInsets.all(isMobile ? 20 : 40), // ✅ MORE PADDING ON DESKTOP
+              padding: EdgeInsets.all(isMobile ? 20 : 40),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -771,7 +770,7 @@ class _BlogPostDetailModalState extends State<BlogPostDetailModal> {
                   TextField(
                     controller: _commentController,
                     decoration: InputDecoration(
-                      hintText: 'Add a comment...',
+                      hintText: 'Add a comment as Guest User...',
                       suffixIcon: IconButton(
                         onPressed: _addComment,
                         icon: const Icon(Icons.send, color: Color(0xFF00B4D8), size: 24),
@@ -862,7 +861,7 @@ class CommentCard extends StatelessWidget {
                         color: Color(0xFF03045E),
                       ),
                     ),
-                    if (comment.authorEmail.isNotEmpty)
+                    if (comment.authorEmail.isNotEmpty && comment.authorEmail != 'guest@example.com')
                       Text(
                         comment.authorEmail,
                         style: const TextStyle(
