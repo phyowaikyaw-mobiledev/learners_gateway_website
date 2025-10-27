@@ -535,4 +535,4 @@ This project is for educational and portfolio purposes. Feel free to explore the
 **Built with Flutter 💙 | Powered by Firebase 🔥 | Learning Never Stops 📚**
 
 </div>
-](https://learners-gateway.web.app/)
+(https://learners-gateway.web.app/)
