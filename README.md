@@ -113,7 +113,7 @@ dependencies:
 ```
 ---
 
-📁 Project Structure
+## 📁 Project Structure
 ```
 bash
 Copy code
@@ -160,7 +160,7 @@ Secure sign-out with proper session cleanup
 
 ---
 
-### Input Validation
+## Input Validation
 ```
 dart
 Copy code
@@ -177,7 +177,7 @@ static String sanitizeInput(String input) {
 // Post content validation (length limits, dangerous pattern detection)
 ```
 
-### Firestore Security (Planned)
+## Firestore Security (Planned)
 ```
 javascript
 Copy code
@@ -222,20 +222,25 @@ VS Code or Android Studio
 
 ---
 
-### Local Development
-Clone the repository
+## Local Development
 
+## Clone the repository
+```
 bash
 Copy code
 git clone https://github.com/phyowaikyaw-mobiledev/learners_gateway_website.git
 cd learners_gateway_website
-Install dependencies
+```
 
+## Install dependencies
+```
 bash
 Copy code
 flutter pub get
-Firebase Setup
+```
 
+## Firebase Setup
+```
 Create a Firebase project at https://console.firebase.google.com
 
 Enable Authentication (Email/Password)
@@ -245,9 +250,10 @@ Create Firestore database
 Download Firebase config
 
 Update lib/config/firebase_config.dart with your admin emails
+```
 
-Update Firebase credentials in web/index.html
-
+## Update Firebase credentials in web/index.html
+```
 javascript
 Copy code
 const firebaseConfig = {
@@ -255,27 +261,32 @@ const firebaseConfig = {
   authDomain: "YOUR_AUTH_DOMAIN",
   projectId: "YOUR_PROJECT_ID"
 };
-Run on web
-
+```
+## Run on web
+```
 bash
 Copy code
 flutter run -d chrome
-Build for production
-
+```
+## Build for production
+```
 bash
 Copy code
 flutter build web --release
-Deploy to Firebase Hosting
-
+```
+## Deploy to Firebase Hosting
+```
 bash
 Copy code
 firebase login
 firebase init hosting
 firebase deploy
-📊 Database Schema
-Firestore Collections
-posts/ (Blog Posts)
+```
+## 📊 Database Schema
 
+##Firestore Collections
+posts/ (Blog Posts)
+```
 javascript
 Copy code
 {
@@ -290,8 +301,10 @@ Copy code
   createdAt: Timestamp,
   updatedAt: Timestamp
 }
-posts/{postId}/comments/ (Comments)
+```
 
+posts/{postId}/comments/ (Comments)
+```
 javascript
 Copy code
 {
@@ -302,6 +315,8 @@ Copy code
   content: "Comment text...",
   createdAt: Timestamp
 }
+```
+
 (All other sections stay the same — About Learning, Challenges, Roadmap, Acknowledgments, etc., already format perfectly as written.)
 
 <div align="center">
