@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Learners Gateway</title>
+
+  <!-- Favicon Links -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon-64x64.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <!-- Other meta tags -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#00B4D8">
+  <meta name="description" content="Learners Gateway - Your platform for tech insights, tutorials, and coding tips">
+
+  <!-- Facebook/Open Graph Meta Tags -->
+  <meta property="og:title" content="Learners Gateway">
+  <meta property="og:description" content="Your platform for tech insights, tutorials, and coding tips">
+  <meta property="og:image" content="favicon-64x64.png">
+  <meta property="og:url" content="https://learners-gateway.web.app">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Learners Gateway">
+  <meta name="twitter:description" content="Your platform for tech insights, tutorials, and coding tips">
+  <meta name="twitter:image" content="favicon-64x64.png">
+</head>
+<body>
+<!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-storage-compat.js"></script>
+
+<script>
+  // Your Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAwKskm7vGlssSDWpvddYnemT7TbXCKKnU",
+    authDomain: "learners-gateway.firebaseapp.com",
+    projectId: "learners-gateway",
+    storageBucket: "learners-gateway.firebasestorage.app",
+    messagingSenderId: "183142236733",
+    appId: "1:183142236733:web:3cb314dc4b27288eab9a054",
+    measurementId: "G-M4GFXGWS1M"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<!-- Flutter loader script -->
+<script>
+  {{flutter_js}}
+  {{flutter_build_config}}
+</script>
+<script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
