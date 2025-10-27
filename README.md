@@ -223,7 +223,6 @@ VS Code or Android Studio
 ---
 
 ## Local Development
-
 ## Clone the repository
 ```
 bash
