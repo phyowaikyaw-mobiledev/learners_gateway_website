@@ -110,7 +110,10 @@ dependencies:
   intl: ^0.19.0                  # Date formatting
   uuid: ^4.3.3                   # Unique ID generation
   share_plus: ^7.2.1             # Social sharing
+```
+
 📁 Project Structure
+```
 bash
 Copy code
 lib/
@@ -141,7 +144,8 @@ web/
 └── firebase.json                  # Firebase hosting config
 ```
 
-🔐 Security Implementation
+##🔐 Security Implementation
+
 Authentication Security
 Admin-only access with email whitelist validation
 
@@ -151,7 +155,7 @@ Email verification required for admin accounts
 
 Secure sign-out with proper session cleanup
 
-```Input Validation
+```##Input Validation
 dart
 Copy code
 // XSS Prevention
