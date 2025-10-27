@@ -75,7 +75,9 @@ This is a **blog platform** that demonstrates:
 git clone https://github.com/phyowaikyaw-mobiledev/learners_gateway_website.git
 
 cd learners_gateway_website
+
 flutter pub get
+
 flutter run
 
 ## 🎓 What This Project Demonstrates
