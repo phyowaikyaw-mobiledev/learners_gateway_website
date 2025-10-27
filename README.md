@@ -284,9 +284,8 @@ firebase init hosting
 firebase deploy
 ```
 ## 📊 Database Schema
-
-## Firestore Collections
-## posts/ (Blog Posts)
+# Firestore Collections
+# posts/ (Blog Posts)
 ```
 javascript
 Copy code
@@ -325,6 +324,11 @@ Copy code
 💙 Learning in Public | Building with Flutter
   
 "This isn't just a portfolio project - it's my journey of learning Flutter web development while building something meaningful for my community."
+
+[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
+[![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com)
+[![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev)
+
 
 Status: 🚧 In Active Development | Completion: ~65%
 
