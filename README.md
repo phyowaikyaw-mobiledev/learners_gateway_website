@@ -102,7 +102,7 @@ This project involves:
 - **Responsive Layouts** - Mobile-first design  
 
 ### Additional Packages
-```yaml
+``yaml
 dependencies:
   visibility_detector: ^0.2.2    # Scroll animations
   google_fonts: ^6.1.0           # Custom typography
